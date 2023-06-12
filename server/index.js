@@ -12,7 +12,10 @@ import salesRoutes from "./routes/sales.js";
 
 // DATA IMPORTS
 import User from "./models/User.js";
-import { dataUser } from "./data/index.js";
+import Product from "./models/Product.js";
+import ProductStat from "./models/ProductStat.js";
+ 
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js";
 
 // CONFIGURATION
 
@@ -44,6 +47,9 @@ mongoose
     app.listen(PORT, () => {
       console.log(`Server running on port: ${PORT}`);
 
+      // ADDING DATA TO MONGODB
+      // ProductStat.insertMany(dataProductStat);
+      // Product.insertMany(dataProduct);
       // User.insertMany(dataUser);
     });
   })
