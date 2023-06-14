@@ -30,7 +30,7 @@ function Layout() {
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
         />
-        <Outlet />
+        <Outlet m="1.5rem 2% 1.5rem 2%" />
       </Box>
     </Box>
   );
