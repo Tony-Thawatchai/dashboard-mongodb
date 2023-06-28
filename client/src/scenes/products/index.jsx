@@ -94,6 +94,7 @@ const Product = ({
 };
 
 function Products() {
+  // state management calls
   const { data, isLoading } = useGetProductsQuery();
   //   const theme = useTheme();
   const isNonMobile = useMediaQuery("(min-width:1000px)");
